@@ -116,12 +116,17 @@ p {
 /* Small screen polish */
 @media (max-width: 480px) {
     .card {
-        width: 92vw;
-        height: 70vh;        /* ⬅️ THIS makes it bigger */
-        max-height: none;   /* remove the cap */
+        width: 90vw;
+        aspect-ratio: 3 / 4;   /* keeps shape */
+        height: auto;
+
+        max-width: 380px;
+        max-height: 520px;
+
         padding: 8vw 6vw;
     }
 }
+
 
 
 
